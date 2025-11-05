@@ -8,8 +8,8 @@ docker compose up --build
 
 ```
 
-This will start:
+- This will start:
 
-Backend → http://localhost:4000
-Frontend → http://localhost:5173
-MongoDB container
+* Backend → http://localhost:4000
+* Frontend → http://localhost:5173
+* MongoDB container
