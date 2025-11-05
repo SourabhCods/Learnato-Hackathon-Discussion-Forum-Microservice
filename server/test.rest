@@ -1,0 +1,30 @@
+### Health
+GET http://localhost:4000/
+
+### Create Post
+POST http://localhost:4000/posts
+Content-Type: application/json
+
+{
+  "title": "How do I deploy Node.js on Cloud Run?",
+  "content": "Any gotchas?",
+  "author": "Rohan"
+}
+
+### List Posts
+GET http://localhost:4000/posts?sort=votes&q=cloud
+
+### Add Reply
+POST http://localhost:4000/posts/{{postId}}/reply
+Content-Type: application/json
+
+{
+  "content": "Use gcloud CLI with region flag",
+  "author": "Aisha"
+}
+
+### Upvote
+POST http://localhost:4000/posts/{{postId}}/upvote
+
+### Mark Answered
+POST http://localhost:4000/posts/{{postId}}/mark-answered
